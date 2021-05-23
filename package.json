@@ -1,0 +1,23 @@
+{
+  "name": "pruebasgendatos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmalmeidam/pruebasgendatos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmalmeidam/pruebasgendatos/issues"
+  },
+  "homepage": "https://github.com/cmalmeidam/pruebasgendatos#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
