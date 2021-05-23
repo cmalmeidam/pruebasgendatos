@@ -52,8 +52,8 @@ export function crearPostExcerpt(path, url, nombrePost,excerptPost) {
 export function crearPostTag(path, url, nombrePost,tagPost) {
   crearPostTx1(path, url, nombrePost);
   cy.get(".post-settings")
-  .click();  
-  cy.get('input[id="ember-power-select-trigger-multiple-input-ember100"]').clear().type(tagPost).type("{enter}") ; 
+  .click();    
+  cy.get('input[id="ember-power-select-trigger-multiple-input-ember92"]').clear().type(tagPost).type("{enter}") ; 
   cy.wait(1500);
   cy.get(".close.settings-menu-header-action")
   .click();
