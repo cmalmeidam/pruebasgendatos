@@ -12,8 +12,6 @@
 
 <h2> Defectos Encontrados </h2>
 
-[Link de incidencias en Jira](https://team-1618171251165.atlassian.net/jira/software/c/projects/TSDL/issues/)
-
-Usuario: misw.411.202116113@gmail.com 
-
-Contraseña: uniandes*21
+* [Link de incidencias en Jira](https://team-1618171251165.atlassian.net/jira/software/c/projects/TSDL/issues/)
+* Usuario: misw.411.202116113@gmail.com 
+* Contraseña: uniandes*21
