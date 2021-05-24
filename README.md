@@ -19,4 +19,4 @@
 
 <h2> Descripción de las estrategias usadas </h2>
 
-* Por favor consultar el documento en el siguiente enlace https://drive.google.com/file/d/1y6sMoXfGA9EOdlBNyKqiaSkFbUkOQpri/view?usp=sharing
+* Por favor consultar el documento en el siguiente enlace [Link de Descripción estrategias] (https://drive.google.com/file/d/1y6sMoXfGA9EOdlBNyKqiaSkFbUkOQpri/view?usp=sharing)
