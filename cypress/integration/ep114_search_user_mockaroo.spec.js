@@ -18,14 +18,16 @@ describe("Buscar Usuario version 3.42.5", function () {
 });
   
 function buscarUsuario(path, url) {
-    const nombreUsuario = faker.lorem.text(256);
+    let nombreUsuario = transversales.nombreGenericoPost().post_name;
     cy.get(".gh-nav-btn-search").click({force: true})
-    .then(() => {
+      .then(() => {
+          cy.wait(1500);
+      });
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      cy.get("[placeholder='Search site...']").first().type(nombreUsuario)
+      .then(() => {
         cy.wait(1500);
-    });
-    cy.get("[placeholder='Search site...']").first().type(nombreUsuario)
-    .then(() => {
-        cy.wait(1500);
-    });
+      });
+    })
     cy.wait(1000);
 }

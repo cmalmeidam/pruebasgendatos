@@ -11,10 +11,9 @@ describe("Crear un post  con emoji version 3.42.5", function () {
       cy.wait(1000);
     });
   });
-    
+  
 function crearPostEmoji(path, url) {
-    let nombrePost =
-    "CrearPost" + faker.lorem.text(256);
+    let nombrePost = transversales.nombreGenericoPost().post_name;
     let nombrePost1=nombrePost+"😀";
     cy.wait(1000);
     cy.get(".gh-secondary-action.gh-nav-new-post.ember-view").click() 

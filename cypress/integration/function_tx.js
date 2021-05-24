@@ -22,3 +22,25 @@ export function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+export function nombreGenericoPost() {
+  var request = new XMLHttpRequest();
+  request.open("GET", "https://my.api.mockaroo.com/mockaroo_ghost?key=f5556af0", false); // `false` makes the request synchronous
+  request.send(null);
+  if (request.status === 200) {
+    let objeto = [];
+    objeto = JSON.parse(request.responseText)
+    return objeto[getRandomInt(0, objeto.length)];
+  }
+}
+
+export function emptyName() {
+  var request = new XMLHttpRequest();
+  request.open("GET", "https://my.api.mockaroo.com/empty_name_ghost?key=f5556af0", false); // `false` makes the request synchronous
+  request.send(null);
+  if (request.status === 200) {
+    let objeto = [];
+    objeto = JSON.parse(request.responseText)
+    return objeto[getRandomInt(0, objeto.length)];
+  }
+}

@@ -29,13 +29,11 @@ function buscarPost(path, url) {
     .then(() => {
       cy.wait(1500);
     });
-    cy.get(".gh-nav-btn-search").click({force: true})
-    .then(() => {
-      cy.wait(1500);
-    });
-    cy.get("[placeholder='Search site...']").first().type(nombrePost)
-    .then(() => {
-      cy.wait(1500);
-    });
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      cy.get("[placeholder='Search site...']").first().type(nombrePost)
+      .then(() => {
+        cy.wait(1500);
+      });
+    })
     cy.wait(1000);
   }

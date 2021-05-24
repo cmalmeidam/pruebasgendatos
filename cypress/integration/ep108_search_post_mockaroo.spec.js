@@ -14,8 +14,8 @@ describe("18. Buscar un post ingresando una oración corta.", function () {
 
   
 function buscarPost(path, url) {
-    const nombrePost =  "CrearPost" + faker.lorem.text(256);
-    cy.wait(1000);
+  let nombrePost = transversales.nombreGenericoPost().post_name;
+  cy.wait(1000);
     cy.get(".gh-secondary-action.gh-nav-new-post.ember-view").click();
     cy.get(".gh-editor-title.ember-text-area.gh-input.ember-view")
     .type(nombrePost)
@@ -33,9 +33,11 @@ function buscarPost(path, url) {
     .then(() => {
       cy.wait(1500);
     });
-    cy.get("[placeholder='Search site...']").first().type(nombrePost)
-    .then(() => {
-      cy.wait(1500);
-    });
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      cy.get("[placeholder='Search site...']").first().type(nombrePost)
+      .then(() => {
+        cy.wait(1500);
+      });
+    })
     cy.wait(1000);
   }
