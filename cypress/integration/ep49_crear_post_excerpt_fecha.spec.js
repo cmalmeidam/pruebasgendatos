@@ -10,7 +10,7 @@ describe("49. Crear un post con excerpt con valor fecha", function () {
     cy.wait(1000);
     const nombrePost = faker.random.alphaNumeric(10);
     const excerptPost = faker.date.future();
-    crearPost.crearPostExcerpt(transversales.PATH_VERSION_3_42_5, transversales.URL_VERSION_3_42_5,nombrePost,excerptPostfaker.date.future());
+    crearPost.crearPostExcerpt(transversales.PATH_VERSION_3_42_5, transversales.URL_VERSION_3_42_5,nombrePost,excerptPost.toISOString());
     cy.wait(1000);
   });
 });
