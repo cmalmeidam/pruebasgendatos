@@ -17,6 +17,6 @@
 * Usuario: misw.411.202116113@gmail.com 
 * Contraseña: uniandes*21
 
-<h2> Descripción de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas </h2>
+<h2> Descripción de las estrategias usadas </h2>
 
 * Por favor consultar el documento en el siguiente enlace https://drive.google.com/file/d/1y6sMoXfGA9EOdlBNyKqiaSkFbUkOQpri/view?usp=sharing
