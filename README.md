@@ -9,3 +9,11 @@
 * Abrir linea de comandos e ir a la carpeta en donde descargo o clono el repositorio
 * Ingresar a la carpeta /cypress
 * Ejecutar el comando cypress run --headless o si lo desea usar el comando cyppress open y ejecutar cada .spec.js de forma manual  
+
+<h2> Defectos Encontrados </h2>
+
+[Link de incidencias en Jira](https://team-1618171251165.atlassian.net/jira/software/c/projects/TSDL/issues/)
+
+Usuario: misw.411.202116113@gmail.com 
+
+Contraseña: uniandes*21
